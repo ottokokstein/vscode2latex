@@ -1,8 +1,14 @@
-out
 dist
 node_modules
-.vscode/
-.vscode-test/
 *.vsix
 .vscode-test.mjs
+.vscode/**
+.vscode-test/**
+.yarnrc
 vsc-extension-quickstart.md
+**/tsconfig.json
+**/eslint.config.mjs
+**/*.map
+**/*.ts
+**/.vscode-test.*
+
