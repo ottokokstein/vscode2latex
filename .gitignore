@@ -11,3 +11,5 @@ vsc-extension-quickstart.md
 **/*.ts
 **/.vscode-test.*
 .vscodeignore
+package-lock.json
+CHANGELOG.md
