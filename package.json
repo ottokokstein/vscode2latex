@@ -1,0 +1,58 @@
+{
+  "name": "vscode2latex",
+  "displayName": "vscode2latex",
+  "description": "vscode2latex converts selected code into a LaTeX file, preserving VS Code’s syntax highlighting and colors. Effortlessly create nicely formatted code snippets for your LaTeX documents.",
+  "version": "1.0.3",
+  "publisher": "ottokokstein",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ottokokstein/vscode2latex"
+  },
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode2latex.convertToLatex",
+        "title": "vscode2latex: Convert Code to LaTeX"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Code2LaTeX Configuration",
+      "properties": {
+        "vscode2latex.customTemplateFilepath": {
+          "type": "string",
+          "default": "",
+          "description": "Path to the custom .tex template file"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.101.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}

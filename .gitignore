@@ -1,0 +1,8 @@
+out
+dist
+node_modules
+.vscode/
+.vscode-test/
+*.vsix
+.vscode-test.mjs
+vsc-extension-quickstart.md
