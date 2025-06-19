@@ -2,7 +2,7 @@
   "name": "vscode2latex",
   "displayName": "vscode2latex",
   "description": "vscode2latex converts selected code into a LaTeX file, preserving VS Code’s syntax highlighting and colors. Effortlessly create nicely formatted code snippets for your LaTeX documents.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "ottokokstein",
   "icon": "icon.png",
   "repository": {

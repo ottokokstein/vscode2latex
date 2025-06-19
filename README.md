@@ -45,6 +45,10 @@ Bug fix release.
 
 Bug fix release.
 
+### 1.0.4
+
+Bug fix release.
+
 ---
 
 GitHub repository: [https://github.com/ottokokstein/vscode2latex](https://github.com/ottokokstein/vscode2latex)
