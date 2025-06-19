@@ -50,6 +50,7 @@ class Parser:
         page_div: bs.element.Tag = soup.find("div")  # type: ignore
         page_style = cssutils.parseStyle(page_div.get("style"))
         bg_color: str = page_style.getPropertyValue("background-color")[1:]
+        bg_color = self.normalize_color(bg_color)
         font: str = page_style.getPropertyValue("font-family").split(",")[0]
         lines: List[Line] = []
         line_elements: List[bs.element.Tag] = page_div.find_all(recursive=False)  # type: ignore
