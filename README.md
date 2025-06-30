@@ -45,4 +45,6 @@ Thanks to the author(s) of the [CodeSnap extension](https://github.com/kufii/Cod
 
 GitHub repository: [https://github.com/ottokokstein/vscode2latex](https://github.com/ottokokstein/vscode2latex)
 
-Found an issue or have feedback? Feel free to let me know on [my personal website](https://ottokokstein.github.io).
+You can find additional info about the development of this extension on [my personal website](https://ottokokstein.github.io/vscode2latex.html).
+
+Found an issue or have feedback? Feel free to let me know on [my personal website's homepage](https://ottokokstein.github.io).
