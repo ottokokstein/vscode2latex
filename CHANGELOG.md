@@ -7,6 +7,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [2.0.1]
 
 - Added an appreciation footnote to README.md
+- Removed typos
 
 ## [2.0.0]
 
