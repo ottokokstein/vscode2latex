@@ -100,8 +100,6 @@ const getClipboardHtml = (clip) => {
 export const pasteCode = (template, clipboard) => {
     snippetNode.innerHTML = getClipboardHtml(clipboard);
     const code = $("div", snippetNode);
-    //   snippetNode.style.fontSize = code.style.fontSize;
-    //   snippetNode.style.lineHeight = code.style.lineHeight;
     const bgColor = parseColor(code.style.backgroundColor);
     snippetNode.innerHTML = code.innerHTML;
     stripInitialIndent(snippetNode);
