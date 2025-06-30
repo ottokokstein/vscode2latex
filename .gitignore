@@ -1,14 +1,10 @@
 dist
 node_modules
 *.vsix
-.vscode-test.mjs
 .vscode/**
 .vscode-test/**
 .yarnrc
-vsc-extension-quickstart.md
-**/tsconfig.json
 **/*.map
-**/*.ts
 **/.vscode-test.*
 .vscodeignore
 package-lock.json

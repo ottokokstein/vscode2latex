@@ -2,7 +2,7 @@
   "name": "vscode2latex",
   "displayName": "vscode2latex",
   "description": "vscode2latex converts selected code into a LaTeX file, preserving VS Code’s syntax highlighting and colors. Effortlessly create nicely formatted code snippets for your LaTeX documents.",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "publisher": "ottokokstein",
   "icon": "icon.png",
   "repository": {
@@ -16,43 +16,46 @@
     "Other"
   ],
   "activationEvents": [],
-  "main": "./out/extension.js",
+  "main": "./src/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "vscode2latex.convertToLatex",
+        "command": "vscode2latex.convert",
         "title": "vscode2latex: Convert Code to LaTeX"
       }
     ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "vscode2latex.convert"
+        }
+      ]
+    },
     "configuration": {
       "type": "object",
-      "title": "Code2LaTeX Configuration",
+      "title": "vscode2latex",
       "properties": {
-        "vscode2latex.customTemplateFilepath": {
+        "vscode2latex.templateFilepath": {
           "type": "string",
           "default": "",
-          "description": "Path to the custom .tex template file"
+          "description": "Path to custom .tex template file (leave empty for default)"
         }
       }
     }
   },
   "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src",
-    "test": "vscode-test"
+    "lint": "eslint .",
+    "check": "npm run lint && npm run check:format"
   },
   "devDependencies": {
-    "@types/vscode": "^1.101.0",
-    "@types/mocha": "^10.0.10",
-    "@types/node": "20.x",
-    "@typescript-eslint/eslint-plugin": "^8.31.1",
-    "@typescript-eslint/parser": "^8.31.1",
-    "eslint": "^9.25.1",
-    "typescript": "^5.8.3",
-    "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.5.2"
+    "eslint": "^7.24.0",
+    "@types/vscode": "^1.52.0",
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.14.40",
+    "glob": "^7.1.6",
+    "mocha": "^8.3.2",
+    "typescript": "^4.2.4",
+    "vscode-test": "^1.5.2"
   }
 }

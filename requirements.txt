@@ -1,3 +1,0 @@
-beautifulsoup4==4.13.4
-cssutils==2.11.1
-pywin32==306
