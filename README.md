@@ -33,7 +33,7 @@ Check CHANGELOG.md for release notes.
 
 ---
 
-Thanks to the author(s) of the [SnapCode extension](https://github.com/kufii/CodeSnap), whose code this extension builds upon.
+Thanks to the author(s) of the [CodeSnap extension](https://github.com/kufii/CodeSnap), whose code this extension builds upon.
 
 GitHub repository: [https://github.com/ottokokstein/vscode2latex](https://github.com/ottokokstein/vscode2latex)
 
