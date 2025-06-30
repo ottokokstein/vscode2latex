@@ -38,7 +38,7 @@
         "vscode2latex.templateFilepath": {
           "type": "string",
           "default": "",
-          "description": "Path to custom .tex template file (leave empty for default)"
+          "description": "Path to custom .tex template file (leave empty for default template)"
         }
       }
     }

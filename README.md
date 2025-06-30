@@ -1,65 +1,35 @@
 # vscode2latex README
 
-This is the README for your extension "vscode2latex". After writing up a brief description, we recommend including the following sections.
+The VS Code extension vscode2latex converts selected code into a LaTeX file, preserving VS Code’s syntax highlighting and colors. Effortlessly create nicely formatted code snippets for your LaTeX documents.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- Convert selected code to LaTeX with matching syntax colors.
+- Preview the generated LaTeX code in a side panel.
+- Customize the LaTeX document template via settings.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- Tested on Windows 10; functionality on other operating systems is not guaranteed.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
 This extension contributes the following settings:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+- `vscode2latex.templateFilepath`: Path to a custom `.tex` template file (leave empty for default template).
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- Large code selections may take a moment to process.
+- Brackets may sometimes lose color during conversion to LaTeX.
+- May not work when syntax highlighting is not present (e.g. in .txt files).
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Check CHANGELOG.md for release notes.
 
 ---
 
-## Working with Markdown
+GitHub repository: [https://github.com/ottokokstein/vscode2latex](https://github.com/ottokokstein/vscode2latex)
 
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Found an issue or have feedback? Feel free to let me know on [my personal website](https://ottokokstein.github.io).
