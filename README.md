@@ -21,6 +21,14 @@ This extension contributes the following settings:
     - `DEFINITIONS_PLACEHOLDER`: The color definitions with `\definecolor` commands will be inserted here.
     - `BG_COLOR_PLACEHOLDER`: The background color’s hex code (without #) will be inserted here.
 
+## Use
+
+- Download the extension from the VS Code Marketplace
+- Select code that is syntax-highlighted
+- Open the Command Palette (default shortcut: F1)
+- Run the `vscode2latex: Convert Code to LaTeX` command
+- Copy the generated LaTeX code from the sidebar
+
 ## Known Issues
 
 - Large code selections may take a moment to process.
