@@ -16,7 +16,10 @@ The VS Code extension vscode2latex converts selected code into a LaTeX file, pre
 
 This extension contributes the following settings:
 
-- `vscode2latex.templateFilepath`: Path to a custom `.tex` template file (leave empty for default template).
+- `vscode2latex.templateFilepath`: Path to a custom `.tex` template file. Leave empty to use the default template. When creating a custom template file, include these placeholders:
+    - `VERBATIM_PLACEHOLDER`: The formatted code with `\textcolor` commands will be inserted here.
+    - `DEFINITIONS_PLACEHOLDER`: The color definitions with `\definecolor` commands will be inserted here.
+    - `BG_COLOR_PLACEHOLDER`: The background color’s hex code (without #) will be inserted here.
 
 ## Known Issues
 
